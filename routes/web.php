@@ -1,6 +1,7 @@
 <?php
 
 use App\Post;
+use Illuminate\Support\Facades\DB;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,7 +22,7 @@ Route::get('/apps', function() {
 });
 
 Route::get('/news', function() {
-	$posts = Post::all();
+	$posts = Post::orderBy('created_at','desc')->get();
 	return view('news')->with(['posts' => $posts]);
 });
 
@@ -48,6 +49,7 @@ Route::get('/admin/users/remove/{id}', "AdminController@remove");
 
 Route::get('/admin/news', "AdminPostController@showCreateView");
 Route::post('/admin/news', "AdminPostController@createNewPost");
-
+Route::get('/admin/news/edit/{id}', "AdminPostController@showEditView");
+Route::post('/admin/news/edit/{id}', "AdminPostController@updateNewsPost");
 
 
