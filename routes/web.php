@@ -1,5 +1,6 @@
 <?php
 
+use App\Post;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +19,35 @@ Route::get('/', function () {
 Route::get('/apps', function() {
 	return view('apps');
 });
+
+Route::get('/news', function() {
+	$posts = Post::all();
+	return view('news')->with(['posts' => $posts]);
+});
+
+Route::get('/contact', function() {
+	return view('contact');
+});
+
+/*
+ * Admin Auth Routes
+ */
+
+Route::get('/admin/register', "Auth\RegisterController@showRegistrationForm");
+Route::get('/admin/login', "Auth\LoginController@showLoginForm");
+Route::post('/admin/register', "Auth\RegisterController@register");
+Route::post('/admin/login', "Auth\LoginController@login");
+Route::post('/admin/logout', "Auth\LoginController@logout");
+
+Route::get('/admin', "AdminController@showDashboardView");
+
+Route::get('/admin/users', "AdminController@showUsersView");
+Route::get('/admin/users/verify/{id}', "AdminController@verify");
+Route::get('/admin/users/revoke/{id}', "AdminController@revoke");
+Route::get('/admin/users/remove/{id}', "AdminController@remove");
+
+Route::get('/admin/news', "AdminPostController@showCreateView");
+Route::post('/admin/news', "AdminPostController@createNewPost");
+
+
+

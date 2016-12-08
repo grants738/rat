@@ -16,15 +16,12 @@
 				<h1 id="logo"><a href="{{url('/')}}">{{config('app.name2')}}</a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="{{url('/')}}">Home</a></li>
-						<li><a href="{{url('/apps')}}">Apps</a></li>
-						<li><a href="{{url('/news')}}">News</a></li>
-						<li><a href="{{url('/contact')}}" class="button special">Contact</a></li>
-						@if(Auth::user())
-							@if(Auth::user()->verified)
-								<li><a href="{{url('/admin')}}">Admin</a></li>
-							@endif
-						@endif
+						<li><a href="/admin">Dashboard</a></li>
+						<li onclick="event.preventDefault();
+                             document.getElementById('logout-form').submit();"><a href="{{url('/admin/logout')}}">Logout</a></li>
+						<form action="/admin/logout" id="logout-form" method="POST" style="display: none;">
+							{{csrf_field()}}
+						</form>
 					</ul>
 				</nav>
 			</header>
@@ -49,10 +46,7 @@
 
 		<!-- Scripts -->
 		<script src="{{url('assets/js/jquery.min.js')}}"></script>
-		<script src="{{url('assets/js/jquery.scrolly.min.js')}}"></script>
 		<script src="{{url('assets/js/jquery.dropotron.min.js')}}"></script>
-		<script src="{{url('assets/js/jquery.scrollex.min.js')}}"></script>
-		<script src="{{url('assets/js/skel.min.js')}}"></script>
 		<script src="{{url('assets/js/util.js')}}"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="{{url('assets/js/main.js')}}"></script>

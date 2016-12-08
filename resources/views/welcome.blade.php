@@ -90,13 +90,13 @@
             <div class="row uniform">
                 <section class="4u 6u(medium) 12u$(xsmall)">
                     <span class="icon alt major fa-user"></span>
-                    <h3>Team Member</h3>
-                    <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                    <h3>Nicholas DiPinto</h3>
+                    <p>I am an undergraduate student studying Software Engineering. I enjoy learning how to program mobile and web applications. I strive to find ways in which I can use my talents to benefit the lives of others.</p>
                 </section>
                 <section class="4u 6u$(medium) 12u$(xsmall)">
                     <span class="icon alt major fa-user"></span>
-                    <h3>Team Member</h3>
-                    <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                    <h3>Grant Savage</h3>
+                    <p>Undergraduate studying Software Engineering with a focus in Cyber Security. I beleive apps are the future and want to put my creations into the hands of everyone.</p>
                 </section>
                 <section class="4u$ 6u(medium) 12u$(xsmall)">
                     <span class="icon alt major fa-user"></span>
