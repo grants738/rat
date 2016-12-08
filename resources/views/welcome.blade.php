@@ -84,7 +84,7 @@
     <div class="container">
         <header class="major">
             <h2>The Team</h2>
-            <p>{{config('app.name')}} is comprised of students from various backgrounds and majors</p>
+            <p>{{config('app.name2')}} is comprised of students from various backgrounds and majors</p>
         </header>
         <div class="box alt">
             <div class="row uniform">

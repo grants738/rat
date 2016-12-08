@@ -18,7 +18,7 @@
 					<ul>
 						<li><a href="/admin">Dashboard</a></li>
 						<li onclick="event.preventDefault();
-                             document.getElementById('logout-form').submit();"><a href="{{url('/admin/logout')}}">Logout</a></li>
+                             document.getElementById('logout-form').submit();"><a href="#">Logout</a></li>
 						<form action="/admin/logout" id="logout-form" method="POST" style="display: none;">
 							{{csrf_field()}}
 						</form>
