@@ -16,10 +16,13 @@ class AdminVerified
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::user()->verified == false) {
-            Auth::logout();
-            return redirect('/');
+        if (Auth::user()) {
+            if (Auth::user()->verified == false) {
+                Auth::logout();
+                return redirect('/');
+            }
         }
+        
         return $next($request);
     }
 }
