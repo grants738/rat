@@ -2779,7 +2779,7 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #00A8E8;
+			background-color: #e44c65;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -3082,7 +3082,7 @@
 	}
 
 		.wrapper.style2 {
-			background: #00A8E8;
+			background: #e44c65;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,

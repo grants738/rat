@@ -6,11 +6,12 @@
 		<header class="major">
 			<h2>Apps we've made</h2>
 			<p>A showcase of some of the applications our team has developed</p>
+			<p>Coming Soon...</p>
 		</header>
-		<div class="row 150%">
+		<!--<div class="row 150%">
 			<div class="4u 12u$(medium)">
 
-				<!-- Sidebar -->
+				<!- Sidebar -
 					<section id="sidebar">
 						<section>
 							<h3>Magna Feugiat</h3>
@@ -37,7 +38,7 @@
 			</div>
 			<div class="8u$ 12u$(medium) important(medium)">
 
-				<!-- Content -->
+				<!- Content -
 					<section id="content">
 						<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
 						<h3>Dolore Amet Consequat</h3>
@@ -55,22 +56,7 @@
 					</section>
 
 			</div>
-		</div>
+		</div>-->
 	</div>
 </div>
-
-<!-- Footer -->
-<footer id="footer">
-	<ul class="icons">
-		<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-		<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-		<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-		<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-		<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-		<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-	</ul>
-	<ul class="copyright">
-		<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-	</ul>
-</footer>
 @endsection
