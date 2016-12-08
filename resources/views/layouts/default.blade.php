@@ -13,13 +13,13 @@
 		<div id="page-wrapper">
 			<!-- Header -->
 			<header id="header">
-				<h1 id="logo"><a href="index.html">{{config('app.name2')}}</a></h1>
+				<h1 id="logo"><a href="{{url('/')}}">{{config('app.name2')}}</a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="/apps">Apps</a></li>
-						<li><a href="/news">News</a></li>
-						<li><a href="/contact" class="button special">Contact</a></li>
+						<li><a href="{{url('/')}}">Home</a></li>
+						<li><a href="{{url('/apps')}}">Apps</a></li>
+						<li><a href="{{url('/news')}}">News</a></li>
+						<li><a href="{{url('/contact')}}" class="button special">Contact</a></li>
 					</ul>
 				</nav>
 			</header>
