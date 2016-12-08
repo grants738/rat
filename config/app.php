@@ -12,8 +12,8 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'RAT',
-    'name2' => 'Riddle Application Team',
+    'name' => 'EAT',
+    'name2' => 'Eagle Application Team',
 
     /*
     |--------------------------------------------------------------------------
