@@ -19,7 +19,7 @@ class AdminVerified
         if (Auth::user()) {
             if (Auth::user()->verified == false) {
                 Auth::logout();
-                return redirect('/');
+                return redirect('/')->with(['info'=>'Your Admin Account Has Not Been Verified Yet']);
             }
         }
         

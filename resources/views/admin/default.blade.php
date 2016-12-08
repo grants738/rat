@@ -25,7 +25,9 @@
 					</ul>
 				</nav>
 			</header>
-
+			<section>
+			    @include('flash')
+			</section>
 			@yield('content')
 
 			<!-- Footer -->
@@ -46,7 +48,10 @@
 
 		<!-- Scripts -->
 		<script src="{{url('assets/js/jquery.min.js')}}"></script>
+		<script src="{{url('assets/js/jquery.scrolly.min.js')}}"></script>
 		<script src="{{url('assets/js/jquery.dropotron.min.js')}}"></script>
+		<script src="{{url('assets/js/jquery.scrollex.min.js')}}"></script>
+		<script src="{{url('assets/js/skel.min.js')}}"></script>
 		<script src="{{url('assets/js/util.js')}}"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="{{url('assets/js/main.js')}}"></script>

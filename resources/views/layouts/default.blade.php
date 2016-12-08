@@ -28,7 +28,9 @@
 					</ul>
 				</nav>
 			</header>
-
+			<section>
+			    @include('flash')
+			</section>
 			@yield('content')
 
 			<!-- Footer -->

@@ -29,6 +29,6 @@ class AdminPostController extends Controller
     		'image_url' => $image_url
     	]);
 
-    	return redirect('/admin/news');
+    	return redirect('/admin/news')->with(['success' => 'Successfully Created New News Post']);
     }
 }

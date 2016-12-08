@@ -24,7 +24,7 @@
 				{{csrf_field()}}
 			</form>
 			<section style="text-align: center;">
-				<a href="{{url('/admin/news/edit')}}" class="button special">Or Edit an Existing Post</a>
+				<a href="{{url('/news')}}" class="button special">Or Edit an Existing Post</a>
 			</section>
 		</section>
 	</div>
