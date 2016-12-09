@@ -95,7 +95,7 @@
                 </section>
                 <section class="4u 6u$(medium) 12u$(xsmall)">
                     <span class="image">
-                        <img src="/images/grant.jpg" class="team" alt="">
+                        <img src="/images/grant.JPG" class="team" alt="">
                     </span>
                     <h3>Grant Savage</h3>
                     <p>Undergraduate studying Software Engineering with a focus in Cyber Security. I beleive apps are the future and want to put my creations into the hands of everyone.</p>
