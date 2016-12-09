@@ -38,7 +38,7 @@ class AdminController extends Controller
 
      public function revoke($id) {
     	$user = User::find($id);
-    	if (!$user) {
+    	if (!$user || $user->id = 1) {
     		return redirect('/admin/users')->with(['error'=>'There was a problem revoking the user.']);
     	}
     	$user->update([
@@ -50,7 +50,7 @@ class AdminController extends Controller
 
      public function remove($id) {
     	$user = User::find($id);
-    	if (!$user) {
+    	if (!$user || $user->id = 1) {
     		return redirect('/admin/users')->with(['error'=>'There was a problem removing the user.']);
     	}
     	$user->delete();

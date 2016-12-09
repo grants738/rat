@@ -27,7 +27,7 @@
 							@endif
 						</td>
 						<td>
-							@if($user->id != Auth::id())
+							@if($user->id != Auth::id() || $user->id != 1)
 								@if($user->verified == true)
 									<a href="/admin/users/revoke/{{$user->id}}" class="button special" style="background-color: #FF9F1C;">Revoke</a>
 									&nbsp;&nbsp;

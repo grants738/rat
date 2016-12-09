@@ -15,6 +15,12 @@ class InquiryController extends Controller
     }
 
     public function postContact(Request $request) {
+        $this->validate($request, [
+            'name' => 'alpha|required',
+            'email' => 'email|required',
+            'message'  => 'alpha_num|required'
+        ]);
+
     	Inquiry::create([
     		'name' => $request->name,
     		'email' => $request->email,
