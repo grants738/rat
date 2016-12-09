@@ -57,11 +57,4 @@ class AdminController extends Controller
         $users = User::all();
     	return redirect('/admin/users')->with(['success'=>'Successfully removed '. $user->name,'users'=>$users]);
     }
-
-    /*
-     * Contacts Methods Section
-     */
-    public function showContactView() {
-
-    }
 }

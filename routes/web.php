@@ -26,9 +26,10 @@ Route::get('/news', function() {
 	return view('news')->with(['posts' => $posts]);
 });
 
-Route::get('/contact', function() {
-	return view('contact');
-});
+Route::post('/email',"EmailController@signUp");
+
+Route::get('/contact', "InquiryController@showContactView");
+Route::post('/contact', "InquiryController@postContact");
 
 /*
  * Admin Auth Routes
@@ -51,5 +52,10 @@ Route::get('/admin/news', "AdminPostController@showCreateView");
 Route::post('/admin/news', "AdminPostController@createNewPost");
 Route::get('/admin/news/edit/{id}', "AdminPostController@showEditView");
 Route::post('/admin/news/edit/{id}', "AdminPostController@updateNewsPost");
+
+Route::get('/admin/inquiries', "AdminInquiryController@showInquiryView");
+Route::get('/admin/inquiries/reply/{id}', "AdminInquiryController@showReplyView");
+Route::post('/admin/inquiries/reply/{id}', "AdminInquiryController@reply");
+Route::get('/admin/inquiries/remove/{id}', "AdminInquiryController@remove");
 
 

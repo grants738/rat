@@ -94,14 +94,18 @@
                     <p>I am an undergraduate student studying Software Engineering. I enjoy learning how to program mobile and web applications. I strive to find ways in which I can use my talents to benefit the lives of others.</p>
                 </section>
                 <section class="4u 6u$(medium) 12u$(xsmall)">
-                    <span class="icon alt major fa-user"></span>
+                    <span class="image">
+                        <img src="/images/grant.jpg" class="team" alt="">
+                    </span>
                     <h3>Grant Savage</h3>
                     <p>Undergraduate studying Software Engineering with a focus in Cyber Security. I beleive apps are the future and want to put my creations into the hands of everyone.</p>
                 </section>
                 <section class="4u$ 6u(medium) 12u$(xsmall)">
-                    <span class="icon alt major fa-user"></span>
-                    <h3>Team Member</h3>
-                    <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                    <span class="image">
+                        <img src="/images/josh.jpg" class="team" alt="">
+                    </span>
+                    <h3>Joshua Van Deren</h3>
+                    <p>Just your typical computerphile here. Always interested in making something unique and useful.</p>
                 </section>
                 <section class="4u 6u$(medium) 12u$(xsmall)">
                     <span class="icon alt major fa-user"></span>
@@ -135,11 +139,12 @@
             <h2>Join us if you're interested</h2>
             <p>We'll sign you up to our mailing list</p>
         </header>
-        <form method="post" action="#" class="container 50%">
+        <form method="post" action="/email" class="container 50%">
             <div class="row uniform 50%">
                 <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-                <div class="4u$ 12u$(xsmall)"><input type="submit" value="Get Started" class="fit special" /></div>
+                <div class="4u$ 12u$(xsmall)"><input type="submit" value="Sign Up" class="fit special" /></div>
             </div>
+            {{csrf_field()}}
         </form>
     </div>
 </section>

@@ -8,6 +8,16 @@
 		<link rel="stylesheet" href="{{url('assets/css/main.css')}}" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style>
+			.team {
+				max-width: 92px;
+				max-height: 92px;
+			}
+
+			.image {
+				margin-bottom: 2em;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="page-wrapper">

@@ -7,7 +7,7 @@
 			<p>We'll get back to you as soon as possible...</p>
 		</header>
 		<section>
-			<form method="post" action="#">
+			<form method="POST" action="/contact">
 				<div class="row uniform 50%">
 					<div class="6u 12u$(xsmall)">
 						<input type="text" name="name" id="name" value="" placeholder="Name" />
@@ -29,6 +29,7 @@
 						</ul>
 					</div>
 				</div>
+				{{csrf_field()}}
 			</form>
 		</section>
 	</div>

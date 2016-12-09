@@ -13,7 +13,7 @@
 					<a href="{{url('/admin/news')}}" class="button special">Create or Delete A News Post</a>
 				</div>
 				<div class="4u">
-					<a href="{{url('/admin/contacts')}}" class="button special">Reply To Inquiries</a>
+					<a href="{{url('/admin/inquiries')}}" class="button special">Reply To Inquiries</a>
 				</div>
 				<div class="4u">
 					<a href="{{url('/admin/users')}}" class="button special">Verify A New Admin</a>
