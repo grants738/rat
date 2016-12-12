@@ -3,7 +3,7 @@
 @section('content')
 <div id="main" class="wrapper style1">
 	<div class="container">
-		<header class="major">
+		<header class="major" style="margin-bottom: 2em;">
 			<h2>News</h2>
 			<p>Some of the stuff we're doing or planning on doing</p>
 		</header>
