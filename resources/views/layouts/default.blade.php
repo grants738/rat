@@ -54,7 +54,7 @@
 			        <li><a href="mailto:savageg2@my.erau.edu" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 			    </ul>
 			    <ul class="copyright">
-			        <li>&copy; {{config('app.name2')}}. All rights reserved.</li>
+			        <li>&copy; <span id="year"></span> {{config('app.name2')}}. All rights reserved.</li>
 			    </ul>
 			</footer>
 		</div>
@@ -68,5 +68,11 @@
 		<script src="{{url('assets/js/util.js')}}"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="{{url('assets/js/main.js')}}"></script>
+		<script>
+			// Automattically Set Copyright Year
+			var year = new Date();
+			year = year.getFullYear();
+			$("#year").text(year);
+		</script>
 	</body>
 </html>

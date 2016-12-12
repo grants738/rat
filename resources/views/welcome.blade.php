@@ -142,7 +142,7 @@
         <form method="post" action="/email" class="container 50%">
             <div class="row uniform 50%">
                 <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-                <div class="4u$ 12u$(xsmall)"><input type="submit" value="Sign Up" class="fit special" /></div>
+                <div class="4u$ 12u$(xsmall)"><input type="submit" value="Sign Up" id="emailSubmit" class="fit special" /></div>
             </div>
             {{csrf_field()}}
         </form>
