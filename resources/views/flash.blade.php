@@ -11,3 +11,11 @@
 	<div class="button special fit" style="background-color: #ED4F32; cursor: default;">{{ Session::get('error') }}</div>
 </section>
 @endif
+
+@if(count($errors) > 0)
+	@foreach($errors->all() as $error)
+		<section style="text-align: center;">
+			<div class="button special fit" style="background-color: #ED4F32; cursor: default;">{{ $error }}</div>
+		</section>
+	@endforeach
+@endif

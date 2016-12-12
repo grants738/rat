@@ -16,7 +16,7 @@ class InquiryController extends Controller
 
     public function postContact(Request $request) {
         $this->validate($request, [
-            'name' => 'alpha|required',
+            'name' => 'required',
             'email' => 'email|required',
             'message'  => 'alpha_num|required'
         ]);
