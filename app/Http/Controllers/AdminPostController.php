@@ -60,4 +60,13 @@ class AdminPostController extends Controller
         return redirect('/news')->with(['success'=>'News Post Successfully Updated']);
     }
 
+    public function remove($id) {
+        $post = Post::find($id);
+        if (!$post) {
+            return redirect()->back()->with(['error'=>'There was a problem removing the news post.']);
+        }
+        $post->delete();
+        return redirect()->back()->with(['success'=>'Successfully Removed News Post']);
+    }
+
 }

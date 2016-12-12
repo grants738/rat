@@ -53,6 +53,7 @@ Route::get('/admin/news', "AdminPostController@showCreateView");
 Route::post('/admin/news', "AdminPostController@createNewPost");
 Route::get('/admin/news/edit/{id}', "AdminPostController@showEditView");
 Route::post('/admin/news/edit/{id}', "AdminPostController@updateNewsPost");
+Route::get('/admin/news/remove/{id}', "AdminPostController@remove");
 
 Route::get('/admin/inquiries', "AdminInquiryController@showInquiryView");
 Route::get('/admin/inquiries/reply/{id}', "AdminInquiryController@showReplyView");
