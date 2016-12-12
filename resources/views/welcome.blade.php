@@ -8,7 +8,7 @@
             <p>We make web, mobile, and other apps.<br />
             Just apps. Lots of apps.</p>
         </header>
-        <span style="display: inline-block;height: 18em;vertical-align: middle;width: 18em;"><img src="https://image.freepik.com/free-vector/coloured-technological-objects-design_1113-15.jpg" alt="" width="300" height="300"/></span>
+        <span style="display: inline-block;height: 18em;vertical-align: middle;width: 18em;"><img src="/images/logo.jpg" alt="" width="300" height="300"/></span>
     </div>
     <a href="#one" class="goto-next scrolly">Next</a>
 </section>
