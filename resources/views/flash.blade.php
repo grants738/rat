@@ -1,6 +1,6 @@
 @if(Session::has('success'))
 <section style="text-align: center;">
-	<div class="button special fit" style="background-color: #15CD72; cursor: default;">{{ Session::get('success') }}</div>
+	<div class="button special fit" style="background-color: #10A058; cursor: default;">{{ Session::get('success') }}</div>
 </section>
 @elseif(Session::has('info'))
 <section style="text-align: center;">

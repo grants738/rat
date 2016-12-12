@@ -48,6 +48,11 @@
                                             </p>
                                         
                                         <p style="margin-top: 0; color: #74787E; font-size: 16px; line-height: 1.5em;">{{$reply}}</p>
+
+                                         <!-- Line -->
+                                            <p style="margin-top: 0; color: #74787E; font-size: 16px; line-height: 1.5em;">
+                                                We'll get in contact with you as soon as we can.
+                                            </p>
                                         
                                         <!-- Salutation -->
                                         <p style="margin-top: 0; color: #74787E; font-size: 16px; line-height: 1.5em;">

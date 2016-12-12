@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 namespace App\Http\Controllers;
 
@@ -42,6 +42,6 @@ class AdminInquiryController extends Controller
     	}
     	$name = $inquiry->name;
     	$inquiry->delete();
-    	return redirect()->back()->with(['success'=>'Successfully Removed'. $name . '\'s Inquiry']);
+    	return redirect()->back()->with(['success'=>'Successfully Removed '. $name . '\'s Inquiry']);
     }
 }

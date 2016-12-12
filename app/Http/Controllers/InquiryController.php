@@ -18,7 +18,7 @@ class InquiryController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'email' => 'email|required',
-            'message'  => 'alpha_num|required'
+            'message'  => 'required'
         ]);
 
     	Inquiry::create([
