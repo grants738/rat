@@ -1,7 +1,7 @@
 <?php
 
 use App\Post;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Foundation\Inspiring;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$quote = Inspiring::quote();
+    return view('welcome')->with(['quote'=>$quote]);
 });
 
 Route::get('/apps', function() {

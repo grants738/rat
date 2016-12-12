@@ -3,7 +3,7 @@
 <!-- Banner -->
 <section id="banner">
     <div class="content">
-        <header>
+        <header style="padding: 3em;">
             <h2>{{config('app.name2')}}</h2>
             <p>We make web, mobile, and other apps.<br />
             Just apps. Lots of apps.</p>
@@ -55,7 +55,7 @@
         network, a word processor, or even an app that connects to your home. There are endless
         possibilities for future apps.</p>
         <ul class="actions">
-            <li><a href="#" class="button">Learn More</a></li>
+            <!--<li><a href="#" class="button">Learn More</a></li>-->
         </ul>
     </div>
     <a href="#three" class="goto-next scrolly">Next</a>
@@ -73,7 +73,7 @@
         problem and designing a solution, and entering competitions to test our new
         skills.</p>
         <ul class="actions">
-            <li><a href="#" class="button">Learn More</a></li>
+            <!--<li><a href="#" class="button">Learn More</a></li>-->
         </ul>
     </div>
     <a href="#four" class="goto-next scrolly">Next</a>
@@ -126,7 +126,7 @@
         </div>
         <footer class="major">
             <ul class="actions">
-                <li><a href="#" class="button">Learn More</a></li>
+                <!--<li><a href="#" class="button">Learn More</a></li>-->
             </ul>
         </footer>
     </div>
@@ -147,5 +147,6 @@
             {{csrf_field()}}
         </form>
     </div>
+    <div class="content"><p>{{$quote}}</p></div>
 </section>
 @endsection

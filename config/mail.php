@@ -57,7 +57,7 @@ return [
 
     'from' => [
         'address' => 'team@eagleappteam.com',
-        'name' => 'Eagle application Team',
+        'name' => 'Eagle Application Team',
     ],
 
     /*

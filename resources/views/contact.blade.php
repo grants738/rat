@@ -10,7 +10,7 @@
 			<form method="POST" action="/contact">
 				<div class="row uniform 50%">
 					<div class="6u 12u$(xsmall)">
-						<input type="text" name="name" id="name" placeholder="Name" value="{{Request::old('name') ?: ''}}" />
+						<input type="text" name="name" id="name" placeholder="Name" value="{{Request::old('name') ?: ''}}" autofocus="on" />
 					</div>
 					<div class="6u$ 12u$(xsmall)">
 						<input type="email" name="email" id="email" placeholder="Email" value="{{Request::old('email') ?: ''}}" />
