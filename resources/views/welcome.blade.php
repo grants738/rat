@@ -107,7 +107,7 @@
                     <h3>Joshua Van Deren</h3>
                     <p>Just your typical computerphile here. Always interested in making something unique and useful.</p>
                 </section>
-                <section class="4u 6u$(medium) 12u$(xsmall)">
+                <!--<section class="4u 6u$(medium) 12u$(xsmall)">
                     <span class="icon alt major fa-user"></span>
                     <h3>Team Member</h3>
                     <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
@@ -121,7 +121,7 @@
                     <span class="icon alt major fa-user"></span>
                     <h3>Team Member</h3>
                     <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-                </section>
+                </section>-->
             </div>
         </div>
         <footer class="major">

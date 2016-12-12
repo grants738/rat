@@ -9,7 +9,7 @@ class EmailController extends Controller
 {
     public function signUp(Request $request) {
     	$this->validate($request,[
-    		'email' => 'email'
+    		'email' => 'email|unique:emails'
     	]);
 
     	Email::create([
