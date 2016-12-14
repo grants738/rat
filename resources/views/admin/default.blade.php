@@ -55,5 +55,7 @@
 		<script src="{{url('assets/js/util.js')}}"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="{{url('assets/js/main.js')}}"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+		@yield('stats')
 	</body>
 </html>

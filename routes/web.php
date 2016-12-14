@@ -2,6 +2,7 @@
 
 use App\Post;
 use Illuminate\Foundation\Inspiring;
+use Illuminate\Support\Facades\Redis;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,15 +15,18 @@ use Illuminate\Foundation\Inspiring;
 */
 
 Route::get('/', function () {
+	Redis::incr('visits');
 	$quote = Inspiring::quote();
     return view('welcome')->with(['quote'=>$quote]);
 });
 
 Route::get('/apps', function() {
+	Redis::incr('apps');
 	return view('apps');
 });
 
 Route::get('/news', function() {
+	Redis::incr('news');
 	$posts = Post::orderBy('created_at','desc')->get();
 	return view('news')->with(['posts' => $posts]);
 });
@@ -60,4 +64,4 @@ Route::get('/admin/inquiries/reply/{id}', "AdminInquiryController@showReplyView"
 Route::post('/admin/inquiries/reply/{id}', "AdminInquiryController@reply");
 Route::get('/admin/inquiries/remove/{id}', "AdminInquiryController@remove");
 
-
+Route::get('/admin/stats', 'AdminController@showStatsView');

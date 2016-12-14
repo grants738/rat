@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redis;
 
 class AdminController extends Controller
 {
@@ -56,5 +57,13 @@ class AdminController extends Controller
     	$user->delete();
         $users = User::all();
     	return redirect('/admin/users')->with(['success'=>'Successfully removed '. $user->name,'users'=>$users]);
+    }
+
+    public function showStatsView(){
+        return view('admin.stats')->with([
+            'views'=> Redis::get('visits'),
+            'news' => Redis::get('news'),
+            'apps' => Redis::get('apps')
+        ]);
     }
 }
