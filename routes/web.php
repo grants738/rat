@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use App\Post;
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Redis;
@@ -15,19 +16,25 @@ use Illuminate\Support\Facades\Redis;
 */
 
 Route::get('/', function () {
-	Redis::incr('visits');
-	Redis::incr('visitsToday');
+	if (Auth::guest()) {
+		Redis::incr('visitsToday');
+		Redis::incr('visits');
+	}	
 	$quote = Inspiring::quote();
     return view('welcome')->with(['quote'=>$quote]);
 });
 
 Route::get('/apps', function() {
-	Redis::incr('apps');
+	if (Auth::guest()) {
+		Redis::incr('apps');
+	}
 	return view('apps');
 });
 
 Route::get('/news', function() {
-	Redis::incr('news');
+	if (Auth::guest()) {
+		Redis::incr('news');
+	}
 	$posts = Post::orderBy('created_at','desc')->get();
 	return view('news')->with(['posts' => $posts]);
 });
