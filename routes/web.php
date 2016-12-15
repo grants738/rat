@@ -65,3 +65,7 @@ Route::post('/admin/inquiries/reply/{id}', "AdminInquiryController@reply");
 Route::get('/admin/inquiries/remove/{id}', "AdminInquiryController@remove");
 
 Route::get('/admin/stats', 'AdminController@showStatsView');
+Route::get('/admin/stats/reset', function() {
+	Redis::set('inquiriesPreviousMonth',0);
+	Redis::set('inquiriesThisMonth', 0);
+});

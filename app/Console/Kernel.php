@@ -28,7 +28,7 @@ class Kernel extends ConsoleKernel
         $schedule->call(function() {
             Redis::set('inquiriesPreviousMonth',Redis::get('inquiriesThisMonth'));
             Redis::set('inquiriesThisMonth',0);
-        })->everyMinute();
+        })->monthly();
     }
 
     /**
