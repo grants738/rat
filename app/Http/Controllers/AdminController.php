@@ -61,7 +61,8 @@ class AdminController extends Controller
 
     public function showStatsView(){
         return view('admin.stats')->with([
-            'views'=> Redis::get('visits'),
+            'views' => Redis::get('visits'),
+            'viewsToday' => Redis::get('visitsToday'),
             'news' => Redis::get('news'),
             'apps' => Redis::get('apps'),
             'previousMonth' => Redis::get('inquiriesPreviousMonth'),

@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Redis;
 
 Route::get('/', function () {
 	Redis::incr('visits');
+	Redis::incr('visitsToday');
 	$quote = Inspiring::quote();
     return view('welcome')->with(['quote'=>$quote]);
 });

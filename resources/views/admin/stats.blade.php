@@ -11,6 +11,8 @@
 					<div class="6u">
 						<h2>Views</h2>
 						<canvas id="views" height="200"></canvas>
+						<br>
+						<h1>Views Today: {{$viewsToday}}</h1>
 					</div>
 					<div class="6u">
 						<h2>Inquiries</h2>
@@ -24,8 +26,8 @@
 
 @section('stats')
 <script>
-	 Chart.defaults.global.defaultFontColor = '#FFFFFF';
-	 Chart.defaults.global.defaultColor = '#FFFFFF';
+	Chart.defaults.global.defaultFontColor = '#FFFFFF';
+	Chart.defaults.global.defaultColor = '#FFFFFF';
 	var viewsData = {
 		labels: ['Home','News','Apps'],
 		datasets: [
