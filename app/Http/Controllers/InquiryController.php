@@ -6,7 +6,7 @@ use Mail;
 use App\Inquiry;
 use App\Mail\ContactCopy;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Redis;
 
 class InquiryController extends Controller
 {
@@ -31,6 +31,8 @@ class InquiryController extends Controller
     	if ($request->copy) {
     		Mail::to($request->email)->send(new ContactCopy($request->name, $request->message));
     	}
+
+        Redis::incr('inquiriesThisMonth');
 
     	return redirect('/')->with(['success'=>'Contact Inquiry Successfully Sent! We\'ll get in touch soon...']);
     }

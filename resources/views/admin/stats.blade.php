@@ -8,16 +8,13 @@
 			</header>
 			<section style="text-align: center;">
 				<div class="row">
-					<div class="4u">
+					<div class="6u">
 						<h2>Views</h2>
-						<canvas id="views" height="300"></canvas>
+						<canvas id="views" height="200"></canvas>
 					</div>
-					<div class="4u">
+					<div class="6u">
 						<h2>Inquiries</h2>
-						<canvas id="inquiries" height="300"></canvas>
-					</div>
-					<div class="4u">
-						
+						<canvas id="inquiries" height="200"></canvas>
 					</div>
 				</div>
 			</section>
@@ -27,6 +24,8 @@
 
 @section('stats')
 <script>
+	 Chart.defaults.global.defaultFontColor = '#FFFFFF';
+	 Chart.defaults.global.defaultColor = '#FFFFFF';
 	var viewsData = {
 		labels: ['Home','News','Apps'],
 		datasets: [
@@ -43,10 +42,17 @@
 	var views = document.querySelector('#views').getContext('2d');
 	new Chart(views, {
 	  type: 'pie',
-	  data: viewsData
+	  data: viewsData,
+	  options: {
+	  	legend: {
+	  		labels: {
+	  			fontColor: 'white'
+	  		}
+	  	}
+	  }
 	});
 	var inquiriesData = {
-		labels: ["January", "February"],
+		labels: ["Previous Month", "Current Month"],
 	    datasets: [
 	        {
 	            label: "Inquiries",
@@ -55,14 +61,55 @@
 	                '#E35947',
 	            ],
 	            borderWidth: 1,
-	            data: [20,40,0],
+	            borderColor: 'white',
+	            data: [{{$previousMonth}},{{$thisMonth}}],
 	        }
 	    ]
 	}
 	var inquiries = document.querySelector('#inquiries').getContext('2d');
-	new Chart(inquiries, {
+	var options = {
+		showScale: true,
+		scaleShowGridLines: true,
+		borderColor: 'white',
+		legend: {
+			display: false,
+			labels: {
+				fontColor: 'white'
+			}
+		},
+	    scales: {
+	    	fontColor: 'white',
+	        yAxes: [{
+	        	display: true,
+	            ticks: {
+	                beginAtZero: true,   // minimum value will be 0.
+	                scaleSteps : 10,
+	                stepSize: 1,
+	            },
+	            labels: {
+	            	fontColor: 'white'
+	            },
+	            gridLines: {
+	            	color: 'white',
+	            	zeroLineColor: 'white'
+	            }
+	        }],
+	        xAxes: [{
+	        	display: true,
+	        	labels: {
+	            	fontColor: 'white'
+	            },
+	            gridLines: {
+	            	color: 'white',
+	            	zeroLineColor: 'white'
+	            }
+	        }],
+	    }
+	};
+	var chart = new Chart(inquiries, {
 		type: 'bar',
-		data:  inquiriesData
+		data:  inquiriesData,
+		options: options
 	});
 </script>
 @endsection
