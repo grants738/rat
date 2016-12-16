@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\ViewLocation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redis;
 
@@ -68,5 +69,15 @@ class AdminController extends Controller
             'previousMonth' => Redis::get('inquiriesPreviousMonth'),
             'thisMonth' => Redis::get('inquiriesThisMonth')
         ]);
+    }
+
+    public function showViewsTableView() {
+        $locations = ViewLocation::all();
+        return view('admin.viewsTable')->with(['locations'=>$locations]);
+    }
+
+    public function clearViewsTable() {
+        ViewLocation::truncate();
+        return redirect()->back();
     }
 }

@@ -19,6 +19,9 @@
 						<canvas id="inquiries" height="200"></canvas>
 					</div>
 				</div>
+				<div style="text-align: center;">
+					<a href="/admin/stats/table" class="button special">View Locations</a>
+				</div>
 			</section>
 		</div>
 	</div>

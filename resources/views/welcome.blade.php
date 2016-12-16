@@ -150,3 +150,13 @@
     <div class="content"><p>{{$quote}}</p></div>
 </section>
 @endsection
+
+@section('script')
+    @if(Auth::guest())
+    <script>
+        $.get('http://freegeoip.net/json/', function(data) {
+          $.get('{{url('/loc')}}'+'?country='+data.country_name+'&state='+data.region_name+'&city='+data.city)
+        });
+    </script>
+    @endif
+@endsection

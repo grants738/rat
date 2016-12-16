@@ -74,5 +74,6 @@
 			year = year.getFullYear();
 			$("#year").text(year);
 		</script>
+		@yield('script')
 	</body>
 </html>

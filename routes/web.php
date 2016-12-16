@@ -77,3 +77,7 @@ Route::get('/admin/stats/reset', function() {
 	Redis::set('inquiriesPreviousMonth',0);
 	Redis::set('inquiriesThisMonth', 0);
 });
+
+Route::get('/admin/stats/table', 'AdminController@showViewsTableView');
+Route::get('/admin/stats/table/clear', 'AdminController@clearViewsTable');
+Route::get('/loc', 'LocationController@store');
