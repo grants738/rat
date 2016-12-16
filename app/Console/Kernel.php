@@ -32,7 +32,7 @@ class Kernel extends ConsoleKernel
 
         $schedule->call(function() {
             Redis::set('visitsToday',0);
-        })->daily();
+        })->everyMinute();
     }
 
     /**
