@@ -1,8 +1,9 @@
 @extends('layouts.default')
 @section('content')
+<a href="#content" class="skip"></a>
 <!-- Banner -->
 <section id="banner">
-    <div class="content">
+    <div class="content" id="content">
         <header style="padding: 3em;">
             <h2>{{config('app.name2')}}</h2>
             <p>We make web, mobile, and other apps.<br />
