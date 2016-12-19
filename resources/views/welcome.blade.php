@@ -8,14 +8,14 @@
             <p>We make web, mobile, and other apps.<br />
             Just apps. Lots of apps.</p>
         </header>
-        <span style="display: inline-block;height: 18em;vertical-align: middle;width: 18em;"><img src="/images/logo.jpg" alt="" width="300" height="300"/></span>
+        <span style="display: inline-block;height: 18em;vertical-align: middle;width: 18em;"><img src="/images/logo.jpg" alt="Logo" width="300" height="300"/></span>
     </div>
     <a href="#one" class="goto-next scrolly">Next</a>
 </section>
 
 <!-- One -->
 <section id="one" class="spotlight style1 bottom">
-    <span class="image fit main"><img src="images/image1.jpeg" alt="" /></span>
+    <span class="image fit main"><img src="images/image1.jpeg" alt="Image 1" /></span>
     <div class="content">
         <div class="container">
             <div class="row">
@@ -43,7 +43,7 @@
 
 <!-- Two -->
 <section id="two" class="spotlight style2 right">
-    <span class="image fit main"><img src="images/image2.jpeg" alt="" /></span>
+    <span class="image fit main"><img src="images/image2.jpeg" alt="Image 2" /></span>
     <div class="content">
         <header>
             <h2>Why we focus on apps</h2>
@@ -63,7 +63,7 @@
 
 <!-- Three -->
 <section id="three" class="spotlight style3 left">
-    <span class="image fit main bottom"><img src="images/image3.jpeg" alt="" /></span>
+    <span class="image fit main bottom"><img src="images/image3.jpeg" alt="Image 3" /></span>
     <div class="content">
         <header>
             <h2>Our Future</h2>
@@ -95,14 +95,14 @@
                 </section>
                 <section class="4u 6u$(medium) 12u$(xsmall)">
                     <span class="image">
-                        <img src="/images/grant.JPG" class="team" alt="">
+                        <img src="/images/grant.JPG" class="team" alt="Grant Savage">
                     </span>
                     <h3>Grant Savage</h3>
                     <p>Undergraduate studying Software Engineering with a focus in Cyber Security. I beleive apps are the future and want to put my creations into the hands of everyone.</p>
                 </section>
                 <section class="4u$ 6u(medium) 12u$(xsmall)">
                     <span class="image">
-                        <img src="/images/josh.jpg" class="team" alt="">
+                        <img src="/images/josh.jpg" class="team" alt="Joshua Van Deren">
                     </span>
                     <h3>Joshua Van Deren</h3>
                     <p>Just your typical computerphile here. Always interested in making something unique and useful.</p>
