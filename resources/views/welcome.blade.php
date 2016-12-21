@@ -28,8 +28,7 @@
                 </div>
                 <div class="4u 12u$(medium)">
                     <p>The {{config('app.name2')}}, or {{config('app.name')}} for short, is a 
-                    group of students who wish to expand their programming 
-                    knowledege through peer collaboration and self projects.</p>
+                    group of students from Embry-Riddle Aeronautical University who wish to expand their programming knowledege through peer collaboration and self projects.</p>
                 </div>
                 <div class="4u$ 12u$(medium)">
                     <p>We intend on building strong programming foundations
@@ -85,7 +84,7 @@
     <div class="container">
         <header class="major">
             <h2>The Team</h2>
-            <p>{{config('app.name2')}} is comprised of students from various backgrounds and majors</p>
+            <p>{{config('app.name2')}} is comprised of students from various backgrounds and majors from Embry-Riddle Prescott</p>
         </header>
         <div class="box alt">
             <div class="row uniform">
