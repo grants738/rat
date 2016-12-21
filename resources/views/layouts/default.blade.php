@@ -4,7 +4,9 @@
 		<title>{{config('app.name2')}}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta description="The official Embry-Riddle Application Team Site" />
+		<meta name="description" content="The official Embry-Riddle Application Team Site" />
+		<meta name="keywords" content="embry-riddle,embry,riddle,app,application,team,organization,software,computer,engineering,programming">
+		<meta name="author" content="Embry-Riddle: Eagle Application Team">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="{{url('css/app.css')}}">
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->

@@ -10,7 +10,7 @@
 		<section style="margin-bottom: 100px;">
 			@foreach($posts as $post)
 				<h3 @if($post->id % 2 != 0) style="text-align: right;" @endif>{{$post->title}} <span style="font-size: 15px; margin-left: 30px;">{{$post->created_at->diffForHumans()}}</span> @if(Auth::user() && Auth::user()->verified) <a href="/admin/news/edit/{{$post->id}}" class="button small special" style="background-color: #FF9F1C; margin-left: 40px;">Edit</a><a href="/admin/news/remove/{{$post->id}}" class="button small special" style="background-color: #ED4F32; margin-left: 10px;">Remove</a>@endif</h3>
-				<p style="margin-bottom: 200px;">
+				<p style="margin-bottom: 120px;">
 					@if($post->id % 2 == 0)
 						<span class="image left" style="margin-bottom: 100px; max-width: 200px; max-height: 200px;">
 							<img src=@if($post->image_url)"{{$post->image_url}}"@else"/images/pic01.jpg"@endif alt="" /></span>
