@@ -47,16 +47,9 @@
 		</div>
 
 		<!-- Scripts -->
-		<script src="{{url('assets/js/jquery.min.js')}}"></script>
-		<script src="{{url('assets/js/jquery.scrolly.min.js')}}"></script>
-		<script src="{{url('assets/js/jquery.dropotron.min.js')}}"></script>
-		<script src="{{url('assets/js/jquery.scrollex.min.js')}}"></script>
-		<script src="{{url('assets/js/skel.min.js')}}"></script>
-		<script src="{{url('assets/js/util.js')}}"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script src="{{url('assets/js/main.js')}}"></script>
+		<script src="{{url('js/app.js')}}"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
-		
 		@yield('stats')
 	</body>
 </html>

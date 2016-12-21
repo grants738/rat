@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html lang='en'>
 	<head>
-		<title>{{config('app.name')}}</title>
+		<title>{{config('app.name2')}}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta description="The official Embry-Riddle Application Team Site" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="{{url('assets/css/main.css')}}" />
+		<link rel="stylesheet" href="{{url('css/app.css')}}">
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<style>
@@ -78,16 +78,8 @@
 			    </ul>
 			</footer>
 		</div>
-
-		<!-- Scripts -->
-		<script src="{{url('assets/js/jquery.min.js')}}"></script>
-		<script src="{{url('assets/js/jquery.scrolly.min.js')}}"></script>
-		<script src="{{url('assets/js/jquery.dropotron.min.js')}}"></script>
-		<script src="{{url('assets/js/jquery.scrollex.min.js')}}"></script>
-		<script src="{{url('assets/js/skel.min.js')}}"></script>
-		<script src="{{url('assets/js/util.js')}}"></script>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script src="{{url('assets/js/main.js')}}"></script>
+		<!--[if lte IE 8]><script src="js/respond.min.js"></script><![endif]-->
+		<script src="{{url('js/app.js')}}"></script>
 		<script>
 			// Automattically Set Copyright Year
 			var year = new Date();
