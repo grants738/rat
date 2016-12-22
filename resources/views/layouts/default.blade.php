@@ -13,8 +13,8 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<style>
 			.team {
-				max-width: 92px;
-				max-height: 92px;
+				max-width: 120px;
+				max-height: 120px;
 			}
 
 			.image {

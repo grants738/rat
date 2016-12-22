@@ -89,9 +89,11 @@
         <div class="box alt">
             <div class="row uniform">
                 <section class="4u 6u(medium) 12u$(xsmall)">
-                    <span class="icon alt major fa-user"></span>
-                    <h3>Nicholas DiPinto</h3>
-                    <p>I am an undergraduate student studying Software Engineering. I enjoy learning how to program mobile and web applications. I strive to find ways in which I can use my talents to benefit the lives of others.</p>
+                    <span class="image">
+                        <img src="/images/reagan.jpg" class="team" alt="Joshua Van Deren">
+                    </span>
+                    <h3>Reagan Sensmeier</h3>
+                    <p>I'm an undergraduate Software Engineering student. In addition to programming, I enjoy computer aided design and animation and I hope to one day work for Pixar.</p>
                 </section>
                 <section class="4u 6u$(medium) 12u$(xsmall)">
                     <span class="image">
@@ -107,21 +109,21 @@
                     <h3>Joshua Van Deren</h3>
                     <p>Just your typical computerphile here. Always interested in making something unique and useful.</p>
                 </section>
-                <!--<section class="4u 6u$(medium) 12u$(xsmall)">
-                    <span class="icon alt major fa-user"></span>
+                <section class="4u 6u$(medium) 12u$(xsmall)">
+                    <!--<span class="icon alt major fa-user"></span>
                     <h3>Team Member</h3>
-                    <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                    <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
                 </section>
                 <section class="4u 6u(medium) 12u$(xsmall)">
                     <span class="icon alt major fa-user"></span>
-                    <h3>Team Member</h3>
-                    <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                    <h3>Nicholas DiPinto</h3>
+                    <p>I am an undergraduate student studying Software Engineering. I enjoy learning how to program mobile and web applications. I strive to find ways in which I can use my talents to benefit the lives of others.</p>
                 </section>
                 <section class="4u$ 6u$(medium) 12u$(xsmall)">
-                    <span class="icon alt major fa-user"></span>
+                    <!--<span class="icon alt major fa-user"></span>
                     <h3>Team Member</h3>
-                    <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-                </section>-->
+                    <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
+                </section>
             </div>
         </div>
         <footer class="major">
