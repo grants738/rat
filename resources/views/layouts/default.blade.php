@@ -45,7 +45,7 @@
 		<div id="page-wrapper">
 			<!-- Header -->
 			<header id="header">
-				<h1 id="logo"><a href="{{url('/')}}">{{config('app.name')}}</a></h1>
+				<h1 id="logo"><a href="{{url('/')}}">{{config('app.name2')}}</a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="{{url('/')}}">Home</a></li>
