@@ -8,9 +8,9 @@
  */
 
 window.$ = window.jQuery = require('jquery');
-require('./jquery.scrolly.min.js');
+//require('./jquery.scrolly.min.js');
 require('./jquery.dropotron.min.js');
-require('./jquery.scrollex.min.js');
+//require('./jquery.scrollex.min.js');
 window.skel = require('./skel.min.js');
 require('./util.js');
 require('./main.js');

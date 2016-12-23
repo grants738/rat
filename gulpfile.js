@@ -19,6 +19,5 @@ elixir((mix) => {
     		'ie8.css',
     		'ie9.css',
     		'main.css'
-    	],'public/css/app.css')
-       .webpack('app.js','./public/js');
+    	],'public/css/app.css');
 });

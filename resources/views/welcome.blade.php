@@ -33,7 +33,7 @@
                 <div class="4u$ 12u$(medium)">
                     <p>We intend on building strong programming foundations
                     so we can go into industry with a strong set of skills and
-                    an advanced toolbelt that we can brig along.</p>
+                    an advanced toolbelt that we can bring along.</p>
                 </div>
             </div>
         </div>
