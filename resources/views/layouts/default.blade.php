@@ -39,9 +39,13 @@
 		        height: auto; 
 		        overflow: visible; 
 		    }
+
+		    p {
+		    	font-weight: 300;
+		    }
 		</style>
 	</head>
-	<body class="landing">
+	<body>
 		<div id="page-wrapper">
 			<!-- Header -->
 			<header id="header">
@@ -60,9 +64,8 @@
 					</ul>
 				</nav>
 			</header>
-			<section>
-			    @include('flash')
-			</section>
+
+			@include('flash')
 
 			@yield('content')
 
