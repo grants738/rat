@@ -1,4 +1,4 @@
-<p align="center"><a href="https://eagleapplicationteam.com" target="_blank"><img width="150"src="https://eagleapplicationteam.com/images/logo.jpg"></a></p>
+<p align="center"><a href="https://eagleappteam.com" target="_blank"><img width="150"src="https://eagleappteam.com/images/logo.jpg"></a></p>
 
 ## Built On Laravel
 
