@@ -1,5 +1,5 @@
 @if(Session::has('success') || Session::has('info') || Session::has('error') || count($errors) > 0)
-	<div style="margin-top: 50px;">
+	<div>
 		<section style="text-align: center;">
 			@if(Session::has('success'))
 				<div class="button special fit" style="background-color: #10A058; cursor: default;">{{ Session::get('success') }}</div>
