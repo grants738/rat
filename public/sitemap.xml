@@ -12,16 +12,16 @@
   <url>
     <loc>https://eagleappteam.com/apps</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://eagleappteam.com/news</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://eagleappteam.com/contact</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>1.00</priority>
   </url>
 </urlset>

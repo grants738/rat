@@ -3,9 +3,9 @@
 	<head>
 		<title>{{config('app.name2')}}</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="The official Embry-Riddle Application Team Site" />
-		<meta name="keywords" content="embry-riddle,embry,riddle,app,application,team,organization,software,computer,engineering,programming">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="description" content="The official Embry-Riddle Application Team Site. We create web and mobile apps. Just apps. Lots of apps. Located on the Prescott, Arizona Campus" />
+		<meta name="keywords" content="erau,embry-riddle,embry,riddle,app,application,team,organization,software,computer,engineering,programming,coding,code,prescott,arizona,web,mobile,apps,official">
 		<meta name="author" content="Embry-Riddle: Eagle Application Team">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="{{url('assets/css/main.css')}}">
@@ -41,7 +41,7 @@
 		    }
 		</style>
 	</head>
-	<body>
+	<body class="landing">
 		<div id="page-wrapper">
 			<!-- Header -->
 			<header id="header">
