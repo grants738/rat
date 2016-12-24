@@ -1,3 +1,7 @@
+@section('title')
+Apps
+@endsection
+
 @extends('layouts.default')
 @section('content')
 <!-- Main -->

@@ -1,3 +1,7 @@
+@section('title')
+Home
+@endsection
+
 @extends('layouts.default')
 @section('content')
 <a href="#content" class="skip"></a>

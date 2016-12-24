@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang='en'>
 	<head>
-		<title>{{config('app.name2')}}</title>
+		<title>{{config('app.name2')}} | @yield('title')</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 		<meta name="description" content="The official Embry-Riddle Application Team Site. We create web and mobile apps. Just apps. Lots of apps. Located on the Prescott, Arizona Campus" />

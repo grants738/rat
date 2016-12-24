@@ -1,3 +1,7 @@
+@section('title')
+News
+@endsection
+
 @extends('layouts.default')
 
 @section('content')

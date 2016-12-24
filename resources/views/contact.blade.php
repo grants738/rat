@@ -1,3 +1,7 @@
+@section('title')
+Contact
+@endsection
+
 @extends('layouts.default')
 @section('content')
 <div id="main" class="wrapper style1">
