@@ -14,13 +14,13 @@ Contact
 			<form method="POST" action="{{url('/contact')}}">
 				<div class="row uniform 50%">
 					<div class="6u 12u$(xsmall)">
-						<input type="text" name="name" id="name" placeholder="Name" value="{{Request::old('name') ?: ''}}" autofocus="on" />
+						<input type="text" name="name" id="name" placeholder="Name" value="{{Request::old('name') ?: ''}}" autofocus="on" required />
 					</div>
 					<div class="6u$ 12u$(xsmall)">
-						<input type="email" name="email" id="email" placeholder="Email" value="{{Request::old('email') ?: ''}}" />
+						<input type="email" name="email" id="email" placeholder="Email" value="{{Request::old('email') ?: ''}}" required />
 					</div>
 					<div class="12u$">
-						<textarea name="message" id="message" placeholder="Message" rows="3" style="resize: none;">{{Request::old('message') ?: ''}}</textarea>
+						<textarea name="message" id="message" placeholder="Message" rows="3" style="resize: none;" required>{{Request::old('message') ?: ''}}</textarea>
 					</div>
 					<div class="6u 12u$(medium)">
 						<input type="checkbox" id="copy" name="copy">
