@@ -113,12 +113,12 @@ Home
                     <h3>Joshua Van Deren</h3>
                     <p>Just your typical computerphile here. Always interested in making something unique and useful.</p>
                 </section>
-                <section class="4u 6u$(medium) 12u$(xsmall)">
-                    <!--<span class="icon alt major fa-user"></span>
-                    <h3>Team Member</h3>
-                    <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
+                <section class="6u 6u$(medium) 12u$(xsmall)">
+                    <span class="icon alt major fa-user"></span>
+                    <h3>Robert Velarde</h3>
+                    <p>Undergraduate in Software Engineering. I am very interested in automation and I believe that programming is the way of the future.</p>
                 </section>
-                <section class="4u 6u(medium) 12u$(xsmall)">
+                <section class="6u 6u(medium) 12u$(xsmall)">
                     <span class="icon alt major fa-user"></span>
                     <h3>Nicholas DiPinto</h3>
                     <p>I am an undergraduate student studying Software Engineering. I enjoy learning how to program mobile and web applications. I strive to find ways in which I can use my talents to benefit the lives of others.</p>
