@@ -12,6 +12,7 @@
 						<th style="text-align: center;">Country</th>
 						<th style="text-align: center;">State</th>
 						<th style="text-align: center;">City</th>
+						<th style="text-align: center;">Time</th>
 					</tr>
 				</thead>
 				<tbody style="text-align: center;">
@@ -20,6 +21,7 @@
 						<td style="vertical-align: middle;">{{$location->country}}</td>
 						<td style="vertical-align: middle;">{{$location->state}}</td>
 						<td style="vertical-align: middle;">{{$location->city}}</td>
+						<td style="vertical-align: middle;">{{$location->created_at->diffForHumans()}}</td>
 					</tr>
 					@endforeach
 				</tbody>
