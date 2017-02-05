@@ -80,4 +80,8 @@ class AdminController extends Controller
         ViewLocation::truncate();
         return redirect()->back();
     }
+
+    public function showBlogAndPostsView() {
+        return view('admin.news.index');
+    }
 }

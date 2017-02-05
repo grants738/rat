@@ -55,6 +55,7 @@
 						<li><a href="{{url('/')}}">Home</a></li>
 						<li><a href="{{url('/apps')}}">Apps</a></li>
 						<li><a href="{{url('/news')}}">News</a></li>
+						<li><a href="{{url('/blogs')}}">Blog</a></li>
 						<li><a href="{{url('/contact')}}" class="button special">Contact</a></li>
 						@if(Auth::user())
 							@if(Auth::user()->verified)

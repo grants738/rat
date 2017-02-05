@@ -10,7 +10,7 @@
 		<section style="text-align: center;">
 			<div class="row">
 				<div class="3u">
-					<a href="{{url('/admin/news')}}" class="button special">News Posts</a>
+					<a href="{{url('/admin/create')}}" class="button special">News and Blog Posts</a>
 				</div>
 				<div class="3u">
 					<a href="{{url('/admin/inquiries')}}" class="button special">Inquiries</a>

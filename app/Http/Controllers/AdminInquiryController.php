@@ -11,7 +11,7 @@ use App\Mail\Reply;
 class AdminInquiryController extends Controller
 {
 	public function __construct() {
-		return $this->middleware(['auth','adminVerified']);
+		$this->middleware(['auth','adminVerified']);
 	}
     public function showInquiryView() {
     	$inquiries = Inquiry::orderBy('replied_to','asc')->get();
