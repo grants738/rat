@@ -81,16 +81,3 @@ Route::get('/admin/stats/reset', function() {
 Route::get('/admin/stats/table', 'AdminController@showViewsTableView');
 Route::get('/admin/stats/table/clear', 'AdminController@clearViewsTable');
 Route::get('/loc', 'LocationController@store');
-
-
-Route::get('/admin/create', "AdminController@showBlogAndPostsView");
-
-Route::get('/admin/blog', "AdminBlogController@index");
-Route::post('/admin/blog', "AdminBlogController@store");
-Route::get('/admin/blog/edit/{id}', "AdminBlogController@edit");
-Route::get('/admin/blog/remove/{id}', "AdminBlogController@edit");
-Route::post('/admin/blog/update/{id}', "AdminBlogController@update");
-
-Route::get('/blogs/{id}', "BlogController@show");
-
-Route::get('/blogs', "BlogController@index");
