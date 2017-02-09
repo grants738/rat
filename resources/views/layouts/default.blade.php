@@ -52,7 +52,6 @@
 				<h1 id="logo"><a href="{{url('/')}}">{{config('app.name2')}}</a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="{{url('/')}}">Home</a></li>
 						<li><a href="{{url('/apps')}}">Apps</a></li>
 						<li><a href="{{url('/news')}}">News</a></li>
 						<li><a href="https://blog.eagleappteam.com">Blog</a></li>
