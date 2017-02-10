@@ -44,8 +44,8 @@ class AdminPostController extends Controller
         $this->validate($request, [
             'title' => 'required',
             'body' => 'required',
-            'image_url' => 'file|required'
-        ])
+            'image_url' => 'file'
+        ]);
 
         // Set image_url to null
     	$image_url = null;

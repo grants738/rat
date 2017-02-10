@@ -56,7 +56,7 @@
 						<li><a href="{{url('/news')}}">News</a></li>
 						<li><a href="https://blog.eagleappteam.com">Blog</a></li>
 						<li><a href="{{url('/contact')}}" class="button special">Contact</a></li>
-						@if(Auth::user())
+						@if(Auth::check())
 							@if(Auth::user()->verified)
 								<li><a href="{{url('/admin')}}">Admin</a></li>
 							@endif
