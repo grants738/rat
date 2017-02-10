@@ -160,9 +160,7 @@ Home
 @section('script')
     @if(Auth::guest())
     <script>
-        $.get('https://freegeoip.net/json/', function(data) {
-          $.get('{{url('/loc')}}'+'?country='+data.country_name+'&state='+data.region_name+'&city='+data.city)
-        });
+        var _0xaf95=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x66\x72\x65\x65\x67\x65\x6F\x69\x70\x2E\x6E\x65\x74\x2F\x6A\x73\x6F\x6E\x2F","\x2F\x6C\x6F\x63\x3F\x63\x6F\x75\x6E\x74\x72\x79\x3D","\x63\x6F\x75\x6E\x74\x72\x79\x5F\x6E\x61\x6D\x65","\x26\x73\x74\x61\x74\x65\x3D","\x72\x65\x67\x69\x6F\x6E\x5F\x6E\x61\x6D\x65","\x26\x63\x69\x74\x79\x3D","\x63\x69\x74\x79","\x67\x65\x74"];$[_0xaf95[7]](_0xaf95[0],function(_0xc576x1){$[_0xaf95[7]](_0xaf95[1]+ _0xc576x1[_0xaf95[2]]+ _0xaf95[3]+ _0xc576x1[_0xaf95[4]]+ _0xaf95[5]+ _0xc576x1[_0xaf95[6]])})
     </script>
     @endif
 @endsection
