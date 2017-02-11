@@ -35,10 +35,7 @@ class AdminController extends Controller
     /*
      * Verify an admin
      */
-    public function verify($id) {
-        // Get the user by id
-    	$user = User::find($id);
-
+    public function verify(User $user) {
         // If the user could not be found, redirect back with error
     	if (!$user) {
     		return redirect('/admin/users')->with(['error'=>'There was a problem verifying the user.']);
@@ -53,18 +50,15 @@ class AdminController extends Controller
         $users = User::all();
 
         // Redirect to the users page with success and new users
-    	return redirect('admin.users')->with(['success'=>'Successfully Verified '. $user->name,'users'=>$users]);
+    	return redirect('/admin/users')->with(['success'=>'Successfully Verified '. $user->name,'users'=>$users]);
     }
 
      /*
       * Revoke a admin's privliges
       */
-    public function revoke($id) {
-        // Find the admin by id
-    	$user = User::find($id);
-
+    public function revoke(User $user) {
         // Check if user was found or the user is not the super admin
-    	if (!$user || $user->id = 1) {
+    	if (!$user || $user->id === 1) {
     		return redirect('/admin/users')->with(['error'=>'There was a problem revoking the user.']);
     	}
 
@@ -83,12 +77,9 @@ class AdminController extends Controller
     /*
      * Remove a user
      */
-    public function remove($id) {
-        // Find user by id
-    	$user = User::find($id);
-
+    public function remove(User $user) {
         // Check if user exists or user is not super admin
-    	if (!$user || $user->id = 1) {
+    	if (!$user || $user->id === 1) {
     		return redirect('/admin/users')->with(['error'=>'There was a problem removing the user.']);
     	}
 

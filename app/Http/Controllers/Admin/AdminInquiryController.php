@@ -29,10 +29,7 @@ class AdminInquiryController extends Controller
     /*
      * Find the inquiry by its id and pass it to the view
      */
-    public function showReplyView($id) {
-        // Find the inquiry by its id
-    	$inquiry = Inquiry::find($id);
-
+    public function showReplyView(Inquiry $inquiry) {
         // If the inquiry could not be found, redirect to the inquiries page
         if (!$inquiry) {
             return redirect('/admin/inquiries');
@@ -45,10 +42,7 @@ class AdminInquiryController extends Controller
     /*
      * Reply to the selected inquiry
      */
-    public function reply(Request $request, $id) {
-        // Find the inquiry by id
-    	$inquiry = Inquiry::find($id);
-
+    public function reply(Request $request, Inquiry $inquiry) {
         // If the inquiry could not be found, redirect back to the inquiries page
     	if (!$inquiry) {
     		return redirect('/admin/inquiries')->with(['error'=>'There was a problem replying to the inquiry.']);
@@ -69,10 +63,7 @@ class AdminInquiryController extends Controller
     /*
      * Remove the inquiry
      */
-    public function remove($id) {
-        // Find the inquiry by id
-    	$inquiry = Inquiry::find($id);
-
+    public function remove(Inquiry $inquiry) {
         // If the inquiry could not be found, redirect back with error
     	if (!$inquiry) {
     		return redirect('/admin/inquiries')->with(['error'=>'There was a problem removing the inquiry.']);

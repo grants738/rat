@@ -23,9 +23,9 @@ class AdminPostController extends Controller
     /*
      * Return the post edit view
      */
-    public function showEditView($id) {
+    public function showEditView(Post $post) {
         // Find the post by id
-        $post = Post::find($id);
+        // $post = Post::find($id);
 
         // If the post could not be found, redirect with error
         if (!$post) {
@@ -70,9 +70,9 @@ class AdminPostController extends Controller
     /*
      * Update a news post
      */
-    public function updateNewsPost(Request $request, $id) {
+    public function updateNewsPost(Request $request, Post $post) {
         // Find post by id
-        $post = Post::find($id);
+        // $post = Post::find($id);
 
         // If the post could not be found, redirect with error
         if (!$post) {
@@ -107,9 +107,9 @@ class AdminPostController extends Controller
     /*
      * Delete a news post
      */
-    public function remove($id) {
+    public function remove(Post $post) {
         // Find news post by id
-        $post = Post::find($id);
+        // $post = Post::find($id);
 
         // If news post could be found, redirect with error
         if (!$post) {

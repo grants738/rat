@@ -52,26 +52,26 @@ Route::group(['namespace' => 'Admin'], function () {
      * User control
      */
 	Route::get('/admin/users', "AdminController@showUsersView");
-	Route::get('/admin/users/verify/{id}', "AdminController@verify");
-	Route::get('/admin/users/revoke/{id}', "AdminController@revoke");
-	Route::get('/admin/users/remove/{id}', "AdminController@remove");
+	Route::get('/admin/users/verify/{user}', "AdminController@verify");
+	Route::get('/admin/users/revoke/{user}', "AdminController@revoke");
+	Route::get('/admin/users/remove/{user}', "AdminController@remove");
 
 	/*
 	 * News post control
 	 */
 	Route::get('/admin/news', "AdminPostController@showCreateView");
 	Route::post('/admin/news', "AdminPostController@createNewPost");
-	Route::get('/admin/news/edit/{id}', "AdminPostController@showEditView");
-	Route::post('/admin/news/edit/{id}', "AdminPostController@updateNewsPost");
-	Route::get('/admin/news/remove/{id}', "AdminPostController@remove");
+	Route::get('/admin/news/edit/{post}', "AdminPostController@showEditView");
+	Route::post('/admin/news/edit/{post}', "AdminPostController@updateNewsPost");
+	Route::get('/admin/news/remove/{post}', "AdminPostController@remove");
 
 	/*
 	 * Inquiry Control
 	 */
 	Route::get('/admin/inquiries', "AdminInquiryController@showInquiryView");
-	Route::get('/admin/inquiries/reply/{id}', "AdminInquiryController@showReplyView");
-	Route::post('/admin/inquiries/reply/{id}', "AdminInquiryController@reply");
-	Route::get('/admin/inquiries/remove/{id}', "AdminInquiryController@remove");
+	Route::get('/admin/inquiries/reply/{inquiry}', "AdminInquiryController@showReplyView");
+	Route::post('/admin/inquiries/reply/{inquiry}', "AdminInquiryController@reply");
+	Route::get('/admin/inquiries/remove/{inquiry}', "AdminInquiryController@remove");
 
 	/*
 	 * Stats control
