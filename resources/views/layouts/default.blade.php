@@ -92,6 +92,6 @@
 		<script src="{{url('assets/js/util.js')}}"></script>
 		<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
 		<script src="{{url('assets/js/main.js')}}"></script>
-		@yield('script')
+		@stack('scripts')
 	</body>
 </html>

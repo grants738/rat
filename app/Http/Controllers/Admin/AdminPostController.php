@@ -24,9 +24,6 @@ class AdminPostController extends Controller
      * Return the post edit view
      */
     public function showEditView(Post $post) {
-        // Find the post by id
-        // $post = Post::find($id);
-
         // If the post could not be found, redirect with error
         if (!$post) {
             return redirect('/admin/news')->with(['error'=>'An error occured trying to edit the post.']);
